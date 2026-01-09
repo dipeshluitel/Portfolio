@@ -1,15 +1,64 @@
 {% extends 'portfolio/base.html' %}
-{% block title %}Home{% endblock %}
 
-{% block main-body %}
-<div class="row align-items-center">
-    <div class="col-md-6">
-        <h1 class="fw-bold">Hi, I'm Dipesh 👋</h1>
-        <p class="lead">
-            BSc CSIT student & Django Developer building clean web apps.
-        </p>
-        <a href="#projects" class="btn btn-primary">View Projects</a>
+{% block content %}
+
+<!-- HERO -->
+<section id="home" class="vh-100 d-flex align-items-center">
+  <div class="container text-center" data-aos="fade-up">
+    <h1 class="fw-bold">Dipesh Luitel</h1>
+    <p class="lead">Django Developer | BSc CSIT</p>
+    <a href="#projects" class="btn btn-primary">View Work</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5 bg-light">
+  <div class="container" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>I build scalable Django web applications.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row">
+      {% for skill in skills %}
+      <div class="col-md-3 text-center" data-aos="zoom-in">
+        <h5>{{ skill.name }}</h5>
+      </div>
+      {% endfor %}
     </div>
+  </div>
+</section>
 
-</div>
+<!-- PROJECTS -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+      {% for project in projects %}
+      <div class="col-md-4 mb-4" data-aos="fade-up">
+        <div class="card h-100 shadow">
+          <img src="{{ project.image.url }}" class="card-img-top">
+          <div class="card-body">
+            <h5>{{ project.title }}</h5>
+            <p>{{ project.description|truncatewords:15 }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+  <div class="container text-center" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: dipesh@example.com</p>
+  </div>
+</section>
+
 {% endblock %}
