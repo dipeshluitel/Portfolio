@@ -71,7 +71,6 @@ body{
     background-color:  #787676;
     border: 1.5px solid #444;
     box-shadow: 0px 4px 10px #787676;
-    transition: 0.2s ease-in-out;
 }
 
 .home-section {
@@ -146,5 +145,12 @@ body{
 }
 .skill h3{
     font-size:22px;
+    user-select: none;
+}
+.contact{
+    user-select: none;
+}
+.contact p a{
+    color: #0B0B0B;
 }
 
