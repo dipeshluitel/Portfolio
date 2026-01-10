@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 80px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    background-color: #D7D7D7;
+}
+.navbar-custom{
+    background-color: #0B0B0B;
+    font-size: 18px;
+}
+.footer{
+    background-color: #1A1A1A;
+    color: #fff;
+    text-align: center;
+}
+.logo-img{
+    width: 30px;
+    border-radius: 10px;
+    filter: invert();
+}
+.logo img{
+    margin-right: 15px;
+}
