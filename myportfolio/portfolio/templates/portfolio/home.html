@@ -79,7 +79,33 @@
             <h2 class="mb-5 mx-auto">SKILLS</h2>
         </div>
         <h3>USING NOW:</h3>
+        <div class="row">
+            {% for stack in stacksUsed %}
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card h-100 shadow">
+                    <img src="{{ stack.image.url }}" class="card-img-top">
+                    <div class="card-body">
+                        <h5>{{ project.title }}</h5>
+                        <p>{{ project.description|truncatewords:15 }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
         <h3>LEARNING:</h3>
+        <div class="row">
+            {% for stack in stacksLearning %}
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card h-100 shadow">
+                    <img src="{{ stack.image.url }}" class="card-img-top">
+                    <div class="card-body">
+                        <h5>{{ project.title }}</h5>
+                        <p>{{ project.description|truncatewords:15 }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 
 </section>
