@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    skills = Skill.objects.all()
+    stacksUsed = Skill.objects.filter(status='y')
     projects = Project.objects.all()
     # return HttpResponse("Hello Home")
-    return render(request, 'portfolio/home.html', {'projects': projects, 'skills': skills})
+    return render(request, 'portfolio/home.html', {'projects': projects, 'stacksUsed': stacksUsed})
