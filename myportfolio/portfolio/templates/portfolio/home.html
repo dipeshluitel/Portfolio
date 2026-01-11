@@ -81,13 +81,9 @@
         <h3>USING NOW:</h3>
         <div class="row">
             {% for stack in stacksUsed %}
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="card h-100 shadow">
-                    <img src="{{ stack.image.url }}" class="card-img-top">
-                    <div class="card-body">
-                        <h5>{{ stack.title }}</h5>
-                    </div>
-                </div>
+            <div class="col-md-4 mb-4 icons" data-aos="fade-up">
+                <img src="{{ stack.icon.url }}" alt="{{stack.name}}" class="skill-icon">
+                <h5>{{ stack.name }}</h5>
             </div>
             {% endfor %}
         </div>

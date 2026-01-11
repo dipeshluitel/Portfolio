@@ -157,4 +157,15 @@ body{
 .contact p a{
     color: #0B0B0B;
 }
+.icons {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.skill-icon{
+    width: 70px;
+    height: auto;
+}
