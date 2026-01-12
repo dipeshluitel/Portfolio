@@ -5,6 +5,7 @@ from django.http import HttpResponse
 
 def home(request):
     stacksUsed = Skill.objects.filter(status='y')
+    stacksLearning = Skill.objects.filter(status='n')
     projects = Project.objects.all()
     # return HttpResponse("Hello Home")
-    return render(request, 'portfolio/home.html', {'projects': projects, 'stacksUsed': stacksUsed})
+    return render(request, 'portfolio/home.html', {'projects': projects, 'stacksUsed': stacksUsed, 'stacksLearning' : stacksLearning})
