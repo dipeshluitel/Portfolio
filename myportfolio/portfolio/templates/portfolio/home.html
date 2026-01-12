@@ -92,7 +92,7 @@
         <h3 class="mb-5">LEARNING:</h3>
         <div class="row">
             {% for stack in stacksLearning %}
-            <div class="col-lg-3 col-md-6 icons">
+            <div class="col-lg-3 col-md-4 col-sm-6 icons">
                 <div data-aos="fade-up">
                     <img src="{{ stack.icon.url }}" alt="{{stack.name}}" class="skill-icon">
                     <p class="fw-medium text-center mt-2">{{ stack.name }}</p>
@@ -111,14 +111,14 @@
         <div class="text-center">
             <h2 class="text-center mb-4">PROJECTS</h2>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             {% for project in projects %}
-            <div class="col-md-4 mb-4" data-aos="fade-up">
+            <div class=" col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                 <div class="card h-100 shadow">
                     <img src="{{ project.image.url }}" class="card-img-top">
                     <div class="card-body">
                         <h5>{{ project.title }}</h5>
-                        <p>{{ project.description|truncatewords:15 }}</p>
+                        <p>{{ project.description|truncatewords:25 }}</p>
                     </div>
                 </div>
             </div>
@@ -136,6 +136,28 @@
                     href="https://www.linkedin.com/in/dipeshluitel/" target="_blank">LinkedIn.</a>
             </span>I look forward to hearing from
             you.</p>
+        <form method="POST">
+            {% csrf_token %}
+
+            <div class="mb-3">
+                {{ form.name.label_tag }}
+                {{ form.name }}
+            </div>
+
+            <div class="mb-3">
+                {{ form.email.label_tag }}
+                {{ form.email }}
+            </div>
+
+            <div class="mb-3">
+                {{ form.message.label_tag }}
+                {{ form.message }}
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Send Message
+            </button>
+        </form>
     </div>
 </section>
 
