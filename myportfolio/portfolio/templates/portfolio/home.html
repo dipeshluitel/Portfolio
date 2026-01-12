@@ -78,12 +78,14 @@
         <div class="text-center">
             <h2 class="mb-5 mx-auto">SKILLS</h2>
         </div>
-        <h3>USING NOW:</h3>
+        <h3 class="mb-5">USING NOW:</h3>
         <div class="row">
             {% for stack in stacksUsed %}
-            <div class="col-md-4 mb-4 icons" data-aos="fade-up">
-                <img src="{{ stack.icon.url }}" alt="{{stack.name}}" class="skill-icon">
-                <h5>{{ stack.name }}</h5>
+            <div class="col-md-4 col-sm-6 icons">
+                <div data-aos="fade-up">
+                    <img src="{{ stack.icon.url }}" alt="{{stack.name}}" class="skill-icon">
+                    <p class="fw-medium">{{ stack.name }}</p>
+                </div>
             </div>
             {% endfor %}
         </div>
@@ -94,8 +96,7 @@
                 <div class="card h-100 shadow">
                     <img src="{{ stack.image.url }}" class="card-img-top">
                     <div class="card-body">
-                        <h5>{{ project.title }}</h5>
-                        <p>{{ project.description|truncatewords:15 }}</p>
+                        <h5>{{ stack.title }}</h5>
                     </div>
                 </div>
             </div>
