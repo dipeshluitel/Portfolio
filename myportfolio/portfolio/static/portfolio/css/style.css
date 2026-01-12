@@ -164,9 +164,15 @@ body{
     align-items: center;
     justify-content: center;
     margin-bottom: 90px;
+    user-select: none;
 }
 
 .skill-icon{
     width: 70px;
     height: auto;
+}
+.skill-icon:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
