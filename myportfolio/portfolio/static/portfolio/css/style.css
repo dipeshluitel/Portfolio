@@ -176,3 +176,25 @@ body{
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
+
+.form{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+
+.form-control{
+    background-color: transparent;
+    border: 1px solid #0B0B0B;
+    margin-bottom: 45px;
+
+}
+.form-control::placeholder{
+    color: #444;
+    font-weight: 10px;
+}
+.form-btn{
+    border: 1px solid #0B0B0B;
+    background-color: transparent;
+}
