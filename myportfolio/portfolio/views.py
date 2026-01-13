@@ -10,13 +10,16 @@ def home(request):
     stacksLearning = Skill.objects.filter(status='n')
     projects = Project.objects.all()
 
+    form = ContactMessageForm()
+
     if request.method == 'POST':
         form = ContactMessageForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('home')  # or a success page
-    else:
-        form = ContactMessageForm()
+        
+        else:
+            print(form.errors)
 
     # return HttpResponse("Hello Home")
     return render(request, 'portfolio/home.html', {'projects': projects, 'stacksUsed': stacksUsed, 'stacksLearning' : stacksLearning, 'form': form})
