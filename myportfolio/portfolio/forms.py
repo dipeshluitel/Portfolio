@@ -4,19 +4,25 @@ from .models import ContactMessage
 class ContactMessageForm(forms.ModelForm):
     class Meta:
         model = ContactMessage
-        fields = ['name', 'email', 'message']
+        fields = ['name', 'email', 'phone_number', 'message']
+
         widgets = {
             'name': forms.TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Your Full Name'
+                'placeholder': 'Your Full Name *'
             }),
             'email': forms.EmailInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Your Email'
+                'placeholder': 'Your Email *'
+            }),
+            'phone_number': forms.TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Phone Number *'
             }),
             'message': forms.Textarea(attrs={
                 'class': 'form-control',
-                'placeholder': 'Your Message',
+                'placeholder': 'Your Message *',
                 'rows': 4
             }),
         }
+

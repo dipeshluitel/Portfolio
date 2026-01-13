@@ -1,4 +1,5 @@
 from django.db import models
+from phonenumber_field.modelfields import PhoneNumberField
 # Create your models here.
 
 SKILL_STATUS = (
@@ -12,6 +13,9 @@ class Project(models.Model):
     image = models.ImageField(upload_to='projects/')
     live_site = models.URLField(blank=True)
     github = models.URLField(blank=True)
+
+    def __str__(self):
+        return self.title
 
 class Skill(models.Model):
     name = models.CharField(max_length=100)
@@ -27,4 +31,12 @@ class Skill(models.Model):
 class ContactMessage(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
+    phone_number = PhoneNumberField(null=True,blank=True,verbose_name="Phone Number")
+
     message = models.TextField()
+
+    def __str__(self):
+        return f"Name: {self.name}"
+    
+    class Meta:
+        ordering = ['name']
