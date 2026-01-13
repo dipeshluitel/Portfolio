@@ -31,7 +31,7 @@ class Skill(models.Model):
 class ContactMessage(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
-    phone_number = PhoneNumberField(null=True,blank=True,verbose_name="Phone Number")
+    phone_number = PhoneNumberField(null=True,blank=True,verbose_name="Phone Number",region='NP',unique=True)
 
     message = models.TextField()
 

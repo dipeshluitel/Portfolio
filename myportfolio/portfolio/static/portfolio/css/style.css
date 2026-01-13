@@ -179,22 +179,31 @@ body{
 
 .form{
     margin-top: 40px;
-    display: flex;
-    flex-direction: column;
     max-width: 40%;
 }
 
 .form-control{
     background-color: transparent;
-    border: 1px solid #0B0B0B;
+    border-left: 1.5px solid #0B0B0B;
+    border-bottom: 1.5px solid #0B0B0B;
     margin-bottom: 45px;
+    padding: 15px;
 
 }
 .form-control::placeholder{
-    color: #444;
-    font-weight: 10px;
+    color: #7c7878;
+    font-weight:bold;
 }
 .form-btn{
-    border: 1px solid #0B0B0B;
+    border: 1px solid #444;
     background-color: transparent;
+    border-radius: 10px;
+    width: 80%;
+}
+.form-btn:hover{
+    border: 1.5px solid #0B0B0B;
+    background-color: transparent;
+    transform: scale(1.01);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
