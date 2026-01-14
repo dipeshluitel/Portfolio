@@ -17,7 +17,7 @@ class ContactMessageForm(forms.ModelForm):
             }),
             'phone_number': forms.TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Phone Number *'
+                'placeholder': 'Your Phone Number'
             }),
             'message': forms.Textarea(attrs={
                 'class': 'form-control',

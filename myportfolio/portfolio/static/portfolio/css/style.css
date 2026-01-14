@@ -192,7 +192,7 @@ body{
 }
 .form-control::placeholder{
     color: #7c7878;
-    font-weight:bold;
+    font-weight:700;
 }
 .form-btn{
     border: 1px solid #444;
@@ -206,4 +206,10 @@ body{
     transform: scale(1.01);
     transition: 0.2s ease-in-out;
     cursor: pointer;
+}
+.message {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
 }
