@@ -35,6 +35,11 @@ body{
     filter: invert();
     margin-right: 15px;
 }
+.logo-img:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
 
 .logo-img-top{
     width: 50px;
@@ -156,6 +161,12 @@ body{
 }
 .contact p a{
     color: #0B0B0B;
+}
+.contact-link:hover{
+     display: inline-block;
+    transform: scale(1.06);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 .icons {
     height: 100px;
