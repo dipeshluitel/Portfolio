@@ -20,7 +20,7 @@ class ContactMessageForm(forms.ModelForm):
                 'placeholder': 'Your Phone Number'
             }),
             'message': forms.Textarea(attrs={
-                'class': 'form-control',
+                'class': 'form-control form-control-messagebox',
                 'placeholder': 'Your Message *',
                 'rows': 4
             }),

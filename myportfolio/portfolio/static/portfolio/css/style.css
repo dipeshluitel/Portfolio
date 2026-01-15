@@ -11,8 +11,14 @@ a{
     color: #fff;
 }
 body{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
     background-color: #D7D7D7;
     color: #0B0B0B;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 .navbar-custom{
     background-color: #0B0B0B;
@@ -207,6 +213,10 @@ body{
     color: #7c7878;
     font-weight:700;
 }
+.form-control-messagebox{
+    max-height:max-content;
+}
+
 .form-btn{
     border: 1px solid #444;
     background-color: transparent;
