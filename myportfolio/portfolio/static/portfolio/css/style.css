@@ -216,6 +216,13 @@ h1, h2, h3, h4, h5, h6 {
 .form-control-messagebox{
     max-height:max-content;
 }
+.form-control:focus {
+    color :#0B0B0B;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: #0B0B0B;
+    transition: 0.7s ease;
+}
 
 .form-btn{
     border: 1px solid #444;
