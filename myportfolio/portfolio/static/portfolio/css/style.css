@@ -137,12 +137,14 @@ body{
     margin-bottom: 15px;
 }
 .about-card:hover{
-    transform: scale(1.05);
-    background-color:  D7D7D7(106, 105, 105);
-    box-shadow: 5px 10px 8px #0B0B0B;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
+    cursor: pointer; 
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 
+}
+.about-card:hover h2{
+    font-size: 1.5em;
+    transition: 0.2s;
 }
 
 .skill h2{
@@ -163,7 +165,7 @@ body{
     color: #0B0B0B;
 }
 .contact-link:hover{
-     display: inline-block;
+    display: inline-block;
     transform: scale(1.06);
     transition: 0.2s ease-in-out;
     cursor: pointer;
@@ -223,4 +225,25 @@ body{
     text-align: center;
     align-items: center;
     margin: auto;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h5 {
+    transition: color 0.3s ease;
+}
+
+.project-card:hover h5 {
+    color: #444;
+    font-weight:bold;
 }
