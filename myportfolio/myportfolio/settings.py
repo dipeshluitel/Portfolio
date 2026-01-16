@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+import os
+
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,10 +29,10 @@ SECRET_KEY = 'django-insecure--hr8zl$*+l)+e4rv=l9^e*c^l6978_mi4d_k&9o5qkzdlk!esr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-import os
 
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
+# ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -79,13 +83,27 @@ WSGI_APPLICATION = 'myportfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+DB_LIVE = os.getenv("DB_LIVE")
 
+if DB_LIVE in["False",False]:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.getenv("DB_NAME"),      # The name of your PostgreSQL database
+            'USER': os.getenv("DB_USER"),      # The username for the database
+            'PASSWORD': os.getenv("DB_PASSWORD"),  # The password for the user
+            'HOST': os.getenv("DB_HOST"),         # The hostname or IP address (use 'localhost' for local development)
+            'PORT': os.getenv("DB_PORT"),                  # The port number (leave blank to use the default 5432)
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
