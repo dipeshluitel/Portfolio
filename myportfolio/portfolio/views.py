@@ -8,6 +8,7 @@ from django.contrib import messages
 # Create your views here.
 
 def home(request):
+    return HttpResponse("App is running")
     stacksUsed = Skill.objects.filter(status='y')
     stacksLearning = Skill.objects.filter(status='n')
     projects = Project.objects.all()
