@@ -33,6 +33,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ["https://portfolio-production-030c.up.railway.app","https://127.0.0.1:8000"]
 
 
 # Application definition
