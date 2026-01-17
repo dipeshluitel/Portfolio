@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
   
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
 section {
   scroll-margin-top: 80px;
   margin-bottom: 150px;
@@ -91,8 +99,8 @@ h1, h2, h3, h4, h5, h6 {
 .home-section {
     display: flex;
     height: 100vh;
-    overflow: hidden;
     user-select: none;
+    overflow-x: hidden;
 }
 
 /* LEFT SIDE (text remains same) */
@@ -101,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 0;
     
 }
 
@@ -116,12 +125,14 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
+    min-width: 0;
 }
 
 .home-right img {
-    width: 70%;
-    max-width: 400px;
+max-width: 90%;
+  height: auto;
+  display: block;
 }
 .title{
     color: #787676;
@@ -229,6 +240,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
     border-radius: 10px;
     width: 80%;
+    color: #444;
 }
 .form-btn:hover{
     border: 1.5px solid #0B0B0B;
@@ -236,6 +248,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.01);
     transition: 0.2s ease-in-out;
     cursor: pointer;
+    color: #0B0B0B;
 }
 .message {
     display: flex;
