@@ -1,0 +1,1170 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$0GQ7BsJk4RiaWyHM2fMFyo$sHQq2EaFTGxtDiTq2iClDz6fthgXxV09AOyEvPk8EPA=",
+    "last_login": "2026-01-12T04:13:16.423Z",
+    "is_superuser": true,
+    "username": "dipeshluitel",
+    "first_name": "",
+    "last_name": "",
+    "email": "d@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-01-09T08:56:32.902Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "d2oej2kzjt7y1ohbzpbzt3cjslyt27pr",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAQAP9lz6ah28euHL3zDU0fi6CGJhROxn83JBz0OjOZN4S4b1PYm6xhLtCDhssvSzE_ZTlEecTlXlWuy7bOSR2JOm1TQy3yup3t32CKbYIeaLQipkSvbTf6Dk12xI4oJU4mjzp7QiGPsWMitGiZmdIV0Tk2tgh8vs54Nso:1ve8Ic:J2ktImppGSRqWgtWckYUM5w59GXXiSgPH0MEmElP2sU",
+    "expire_date": "2026-01-23T08:56:50.085Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qum4eeebctqzy0ycgpk1cxahvhiuwr33",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAQAP9lz6ah28euHL3zDU0fi6CGJhROxn83JBz0OjOZN4S4b1PYm6xhLtCDhssvSzE_ZTlEecTlXlWuy7bOSR2JOm1TQy3yup3t32CKbYIeaLQipkSvbTf6Dk12xI4oJU4mjzp7QiGPsWMitGiZmdIV0Tk2tgh8vs54Nso:1vf9Iq:Es30VwrrvO5H03YYx8KqAruRKbtatl4-86W-twcljHA",
+    "expire_date": "2026-01-26T04:13:16.431Z"
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 1,
+  "fields": {
+    "title": "Personal Portfolio Website",
+    "description": "A professional personal portfolio website built using Django Web Framework and Bootstrap. It presents my skills, experience, project highlights, and contact details in a clean, responsive UI - perfect for showcasing myself to recruiters and clients online.",
+    "image": "projects/Screenshot_2026-01-14_083038.png",
+    "live_site": "",
+    "github": "https://github.com/dipeshluitel/Portfolio"
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 2,
+  "fields": {
+    "title": "GoCart(E-Commerce Website)",
+    "description": "A dynamic ecommerce web application built with Django that demonstrates complete online shopping functionality - from user registration & authentication to product browsing, cart management, and integrated payment workflows.",
+    "image": "projects/ecommerceWebsite.png",
+    "live_site": "",
+    "github": "https://github.com/dipeshluitel/Ecommerce-Website"
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 3,
+  "fields": {
+    "title": "Restaurant Management System(Backend)",
+    "description": "A Restaurant Management System built using Django that supports multiple user roles (Admin, Waiter, Kitchen). It showcases dynamic dashboards and role-specific workflows to organize restaurant operations, including order creation, order tracking, and status updates. This project demonstrates backend logic with Django models, views, templates, and role-based access control.",
+    "image": "projects/Restaurant_Management_System.png",
+    "live_site": "",
+    "github": "https://github.com/dipeshluitel/RestaurantManagementSystem"
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 4,
+  "fields": {
+    "title": "Receipe Container",
+    "description": "A recipe management web application built using Django that allows users to add, view, update, delete, and search for recipes. The project demonstrates full CRUD (Create, Read, Update, Delete) operations and implements case-insensitive search using Djangos icontains lookup - making it a clean example of backend database interaction and dynamic user interfaces.",
+    "image": "projects/receipeContainer.png",
+    "live_site": "",
+    "github": "https://github.com/dipeshluitel/Receipe-Container"
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 5,
+  "fields": {
+    "title": "To Do List",
+    "description": "A simple yet powerful ToDo list web application built using Django, enabling users to create, view, complete, and delete tasks. This project demonstrates essential CRUD functionality and dynamic data handling with Django views and templates",
+    "image": "projects/To-Do_List.png",
+    "live_site": "",
+    "github": "https://github.com/dipeshluitel/ToDoList"
+  }
+},
+{
+  "model": "portfolio.project",
+  "pk": 6,
+  "fields": {
+    "title": "Student Report Card",
+    "description": "A Django-powered student report card web application that allows users to search student records, view detailed results, and see marks, total scores, and ranks for each student. It demonstrates Django ORM, dynamic rendering, and responsive UI design to manage and present academic data.",
+    "image": "projects/reportCard.png",
+    "live_site": "",
+    "github": "https://github.com/dipeshluitel/Student_ReportCard"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 1,
+  "fields": {
+    "name": "DJANGO",
+    "icon": "skills/django.png",
+    "status": "y"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 3,
+  "fields": {
+    "name": "MS-SQL",
+    "icon": "skills/sql-server.png",
+    "status": "y"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 4,
+  "fields": {
+    "name": "GIT",
+    "icon": "skills/git.png",
+    "status": "y"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 5,
+  "fields": {
+    "name": "BOOTSTRAP",
+    "icon": "skills/bootstrap.png",
+    "status": "y"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 6,
+  "fields": {
+    "name": "JAVASCRIPT",
+    "icon": "skills/js.png",
+    "status": "y"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 7,
+  "fields": {
+    "name": "CSS3",
+    "icon": "skills/css-3.png",
+    "status": "y"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 8,
+  "fields": {
+    "name": "PYTHON",
+    "icon": "skills/python.png",
+    "status": "y"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 9,
+  "fields": {
+    "name": "HTML5",
+    "icon": "skills/html.png",
+    "status": "y"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 10,
+  "fields": {
+    "name": "SQLite",
+    "icon": "skills/sqlite.png",
+    "status": "y"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 11,
+  "fields": {
+    "name": "POSTGRESQL",
+    "icon": "skills/postgresql.png",
+    "status": "n"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 12,
+  "fields": {
+    "name": "NODE JS",
+    "icon": "skills/nodejs.png",
+    "status": "n"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 13,
+  "fields": {
+    "name": "REACT",
+    "icon": "skills/react.png",
+    "status": "n"
+  }
+},
+{
+  "model": "portfolio.skill",
+  "pk": 14,
+  "fields": {
+    "name": "TYPESCRIPT",
+    "icon": "skills/typescript.png",
+    "status": "n"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 1,
+  "fields": {
+    "name": "Dipesh Luitel",
+    "email": "dipeshluitel40@gmail.com",
+    "phone_number": "+9779807937944",
+    "message": "help me!"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 2,
+  "fields": {
+    "name": "Jasmin Karki Luitel",
+    "email": "jasmin105@gmail.com",
+    "phone_number": "+9779816981395",
+    "message": "Help me with website development"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 3,
+  "fields": {
+    "name": "Sagar Luitel",
+    "email": "s@gmail.com",
+    "phone_number": "+9779842734045",
+    "message": "dsadasda"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 4,
+  "fields": {
+    "name": "Dipesh Luitel",
+    "email": "dipeshluitel40@gmail.com",
+    "phone_number": null,
+    "message": "help me please"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 5,
+  "fields": {
+    "name": "Dipesh Luitel",
+    "email": "dipeshluitel40@gmail.com",
+    "phone_number": null,
+    "message": "hello world"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 6,
+  "fields": {
+    "name": "Dipu",
+    "email": "dipeshluitel40@gmail.com",
+    "phone_number": null,
+    "message": "hello world"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 7,
+  "fields": {
+    "name": "Bishal shrestha",
+    "email": "bishal@gmail.com",
+    "phone_number": "+9779807937944",
+    "message": "Help me Dipesh"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 8,
+  "fields": {
+    "name": "Dipesh Sharma",
+    "email": "dipeshsharma@gmail.com",
+    "phone_number": null,
+    "message": "I want to develop ecomm for my mobile store"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 9,
+  "fields": {
+    "name": "Jasmin Luitel",
+    "email": "jasmin105@gmail.com",
+    "phone_number": "+9779816981395",
+    "message": "Help me with my School DB management"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 10,
+  "fields": {
+    "name": "Dharma Luitel",
+    "email": "dhanrma@gmail.com",
+    "phone_number": "+9779803893383",
+    "message": "Help me with FrontEnd development"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 11,
+  "fields": {
+    "name": "Dharma Luitel",
+    "email": "dhanrma@gmail.com",
+    "phone_number": "+9779803893383",
+    "message": "Help me with FrontEnd development"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 12,
+  "fields": {
+    "name": "Dharma Luitel",
+    "email": "dhanrma@gmail.com",
+    "phone_number": "+9779803893383",
+    "message": "Help me with FrontEnd development"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 13,
+  "fields": {
+    "name": "Pankaj Shah",
+    "email": "pankaj@gmail.com",
+    "phone_number": null,
+    "message": "hello world"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 14,
+  "fields": {
+    "name": "Hanuman Complex",
+    "email": "han@gmail.com",
+    "phone_number": "+97723540346",
+    "message": "hello"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 15,
+  "fields": {
+    "name": "Shyam Luitel",
+    "email": "shym@gmail.com",
+    "phone_number": "+9779816981456",
+    "message": "helllllo"
+  }
+},
+{
+  "model": "portfolio.contactmessage",
+  "pk": 16,
+  "fields": {
+    "name": "Bhesraj Karki",
+    "email": "bhesraj@gmail.com",
+    "phone_number": "+9779807937944",
+    "message": "hellllo"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-01-10T17:01:48.824Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "1",
+    "object_repr": "Skill object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-01-10T17:02:13.756Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "2",
+    "object_repr": "Skill object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-01-10T17:02:28.709Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "3",
+    "object_repr": "Skill object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-01-10T17:02:42.421Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "4",
+    "object_repr": "Skill object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-01-10T17:02:57.218Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "5",
+    "object_repr": "Skill object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-01-10T17:03:15.998Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "6",
+    "object_repr": "Skill object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-01-10T17:03:30.837Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "7",
+    "object_repr": "Skill object (7)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-01-10T17:04:07.425Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "8",
+    "object_repr": "Skill object (8)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-01-10T17:04:27.075Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "9",
+    "object_repr": "Skill object (9)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-01-10T17:08:40.122Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "2",
+    "object_repr": "SQLite",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-01-10T17:13:53.529Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "5",
+    "object_repr": "BOOTSTRAP",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-01-10T17:13:59.426Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "7",
+    "object_repr": "CSS3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-01-10T17:14:04.926Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "1",
+    "object_repr": "DJANGO",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-01-10T17:14:13.390Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "4",
+    "object_repr": "GIT",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-01-10T17:14:18.387Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "9",
+    "object_repr": "HTML5",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-01-10T17:14:23.433Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "6",
+    "object_repr": "JAVASCRIPT",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-01-10T17:14:30.193Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "3",
+    "object_repr": "MS-SQL",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-01-10T17:14:45.735Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "8",
+    "object_repr": "PYTHON",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-01-10T17:21:49.534Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "10",
+    "object_repr": "SQLite",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-01-11T13:17:42.557Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "5",
+    "object_repr": "BOOTSTRAP",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Icon\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-01-11T13:18:21.343Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "7",
+    "object_repr": "CSS3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Icon\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-01-11T13:18:34.262Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "1",
+    "object_repr": "DJANGO",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Icon\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-01-11T13:18:41.280Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "4",
+    "object_repr": "GIT",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Icon\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-01-11T13:18:52.729Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "9",
+    "object_repr": "HTML5",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Icon\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-01-11T13:19:01.476Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "6",
+    "object_repr": "JAVASCRIPT",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Icon\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-01-11T13:19:15.411Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "3",
+    "object_repr": "MS-SQL",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Icon\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-01-11T13:19:24.529Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "8",
+    "object_repr": "PYTHON",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Icon\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-01-11T13:19:32.069Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "10",
+    "object_repr": "SQLite",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Icon\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-01-12T02:37:33.226Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "11",
+    "object_repr": "POSTGRESQL",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-01-12T02:37:48.998Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "12",
+    "object_repr": "NODE JS",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-01-12T02:37:58.745Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "13",
+    "object_repr": "REACT",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2026-01-12T02:38:14.068Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "skill"
+    ],
+    "object_id": "14",
+    "object_repr": "TYPESCRIPT",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2026-01-12T04:17:22.656Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "project"
+    ],
+    "object_id": "1",
+    "object_repr": "Project object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2026-01-12T04:19:18.378Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "project"
+    ],
+    "object_id": "2",
+    "object_repr": "Project object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2026-01-12T04:20:56.519Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "project"
+    ],
+    "object_id": "3",
+    "object_repr": "Project object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2026-01-12T04:22:27.083Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "project"
+    ],
+    "object_id": "4",
+    "object_repr": "Project object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2026-01-12T04:24:42.642Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "project"
+    ],
+    "object_id": "5",
+    "object_repr": "Project object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2026-01-12T04:25:37.795Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "project"
+    ],
+    "object_id": "6",
+    "object_repr": "Project object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2026-01-13T14:52:12.093Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "contactmessage"
+    ],
+    "object_id": "1",
+    "object_repr": "Name: Dipesh Luitel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2026-01-13T14:54:26.836Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "contactmessage"
+    ],
+    "object_id": "2",
+    "object_repr": "Name: Jasmin Karki Luitel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2026-01-13T14:54:40.821Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "contactmessage"
+    ],
+    "object_id": "2",
+    "object_repr": "Name: Jasmin Karki Luitel",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2026-01-13T14:57:34.075Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "contactmessage"
+    ],
+    "object_id": "3",
+    "object_repr": "Name: Sagar Luitel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2026-01-14T02:46:09.376Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "project"
+    ],
+    "object_id": "1",
+    "object_repr": "Personal Portfolio Website",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2026-01-14T02:46:48.125Z",
+    "user": [
+      "dipeshluitel"
+    ],
+    "content_type": [
+      "portfolio",
+      "project"
+    ],
+    "object_id": "1",
+    "object_repr": "Personal Portfolio Website",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+}
+]
