@@ -14,8 +14,8 @@ from pathlib import Path
 import os
 
 # For Railways
-# from dotenv import load_dotenv   
-# load_dotenv()
+from dotenv import load_dotenv   
+load_dotenv()
 
 import dj_database_url
 
@@ -33,13 +33,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--hr8zl$*+l)+e4rv=l9^e*c^l6978_mi4d_k&9o5qkzdlk!esr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG") == "True"
+# DEBUG = os.getenv("DEBUG") == "True"
+DEBUG = True
 
 
 
-# ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
-ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ["https://portfolio-production-030c.up.railway.app","https://127.0.0.1:8000"]
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
+# ALLOWED_HOSTS = ['*']
+# CSRF_TRUSTED_ORIGINS = ["https://portfolio-production-030c.up.railway.app","https://127.0.0.1:8000"]
 
 username = os.environ.get("DJANGO_SUPERUSER_USERNAME")
 email = os.environ.get("DJANGO_SUPERUSER_EMAIL")
@@ -158,11 +159,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
-# STORAGES = {
-#     "staticfiles": {
-#         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-#     },
-# }
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
