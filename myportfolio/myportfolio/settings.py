@@ -13,8 +13,14 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 from pathlib import Path
 import os
 
-from dotenv import load_dotenv
-load_dotenv()
+# For Railways
+# from dotenv import load_dotenv   
+# load_dotenv()
+
+import dj_database_url
+
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -99,16 +105,23 @@ if DB_LIVE in["False",False]:
     }
 
 else:
+    # DATABASES = {
+    #     'default': {
+    #         'ENGINE': 'django.db.backends.postgresql',
+    #         'NAME': os.environ.get("DB_NAME"),      # The name of your PostgreSQL database
+    #         'USER': os.environ.get("DB_USER"),      # The username for the database
+    #         'PASSWORD': os.environ.get("DB_PASSWORD"),  # The password for the user
+    #         'HOST': os.environ.get("DB_HOST"),         # The hostname or IP address (use 'localhost' for local development)
+    #         'PORT': os.environ.get("DB_PORT"),                  # The port number (leave blank to use the default 5432)
+    #     }
+    # }
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.environ.get("DB_NAME"),      # The name of your PostgreSQL database
-            'USER': os.environ.get("DB_USER"),      # The username for the database
-            'PASSWORD': os.environ.get("DB_PASSWORD"),  # The password for the user
-            'HOST': os.environ.get("DB_HOST"),         # The hostname or IP address (use 'localhost' for local development)
-            'PORT': os.environ.get("DB_PORT"),                  # The port number (leave blank to use the default 5432)
-        }
-    }
+    'default': dj_database_url.config(
+        default=os.getenv("DATABASE_URL"),
+        conn_max_age=600,
+        ssl_require=True
+    )
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
