@@ -33,8 +33,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--hr8zl$*+l)+e4rv=l9^e*c^l6978_mi4d_k&9o5qkzdlk!esr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = os.getenv("DEBUG") == "True"
-DEBUG = True
+DEBUG = os.getenv("DEBUG") == "True"
+# DEBUG = True
 
 
 
@@ -164,6 +164,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 #         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
 #     },
 # }
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
