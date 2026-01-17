@@ -35,6 +35,10 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ["https://portfolio-production-030c.up.railway.app","https://127.0.0.1:8000"]
 
+username = os.environ.get("DJANGO_SUPERUSER_USERNAME")
+email = os.environ.get("DJANGO_SUPERUSER_EMAIL")
+password = os.environ.get("DJANGO_SUPERUSER_PASSWORD")
+
 
 # Application definition
 
@@ -98,11 +102,11 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.getenv("DB_NAME"),      # The name of your PostgreSQL database
-            'USER': os.getenv("DB_USER"),      # The username for the database
-            'PASSWORD': os.getenv("DB_PASSWORD"),  # The password for the user
-            'HOST': os.getenv("DB_HOST"),         # The hostname or IP address (use 'localhost' for local development)
-            'PORT': os.getenv("DB_PORT"),                  # The port number (leave blank to use the default 5432)
+            'NAME': os.environ.get("DB_NAME"),      # The name of your PostgreSQL database
+            'USER': os.environ.get("DB_USER"),      # The username for the database
+            'PASSWORD': os.environ.get("DB_PASSWORD"),  # The password for the user
+            'HOST': os.environ.get("DB_HOST"),         # The hostname or IP address (use 'localhost' for local development)
+            'PORT': os.environ.get("DB_PORT"),                  # The port number (leave blank to use the default 5432)
         }
     }
 
