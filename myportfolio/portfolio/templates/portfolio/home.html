@@ -46,7 +46,7 @@
     </div>
     <div class="about-detail container-fluid mt-5">
         <div class="row justify-content-center g-4 text-center">
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
                 <div class="about-card" data-aos="fade-right">
                     <h2>DESIGN</h2>
                     <p>I can design the site based on your needs and suggestions. I can also design the site from
@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
                 <div class="about-card" data-aos="fade-left">
                     <h2>DEVELOPMENT</h2>
                     <p>I can develop Scalable Project, I majorly use Django Web Framework which makes the development
@@ -62,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center">
                 <div class="about-card" data-aos="fade-up">
                     <h2>MAINTENANCE</h2>
                     <p>I can take ownership of the project's maintenance backlog, implementing necessary updates and bug
@@ -81,7 +81,7 @@
         <h3 class="mb-5" data-aos="fade-right">USING NOW:</h3>
         <div class="row">
             {% for stack in stacksUsed %}
-            <div class="col-md-4 col-sm-6 icons">
+            <div class="col-md-4 col-6 icons">
                 <div data-aos="fade-up">
                     <img src="{{ stack.icon.url }}" alt="{{stack.name}}" class="skill-icon">
                     <p class="fw-medium text-center mt-2">{{ stack.name }}</p>
@@ -92,7 +92,7 @@
         <h3 class="mb-5" data-aos="fade-right">LEARNING:</h3>
         <div class="row">
             {% for stack in stacksLearning %}
-            <div class="col-lg-3 col-md-4 col-sm-6 icons">
+            <div class="col-lg-3 col-md-4 col-6 icons">
                 <div data-aos="fade-up">
                     <img src="{{ stack.icon.url }}" alt="{{stack.name}}" class="skill-icon">
                     <p class="fw-medium text-center mt-2">{{ stack.name }}</p>
